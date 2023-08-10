@@ -1,0 +1,235 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Contoso Bank</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./files/bootstrap.min.css">
+		<link rel="stylesheet" href="./files/styles.css">
+		<script src="./files/jquery.js"></script>
+		<script src="./files/bootstrap.min.js"></script>
+		
+		<script type="text/javascript">
+        function openChat() {
+            var frame = document.getElementById("chat-frame");
+            frame.className = "";
+            var img = document.getElementById("chat-button");
+            img.className = "hide";
+        }
+        function closeChat() {
+            var frame = document.getElementById("chat-frame");
+            frame.className = "hide";
+            var img = document.getElementById("chat-button");
+            img.className = "";
+        }
+    </script>
+	</head>
+	<!-- -->
+	<body>
+		<!-- Navigation Bar  -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a id="brand" class="navbar-brand" href="#"><img src="./files/logo.png" style="height:100%;"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"> <a href="./index.html">Personal</a></li>
+						<li> <a href="./wealthmanagement.html">Wealth Management</a></li>
+						<li> <a href="./studentloans.html">Student Loans</a></li>
+						<li> <a href="./investmentoptions.html">Investment Options</a></li>
+						<li> <a href="./faq.html">FAQ</a></li>
+						<li> <a href="#">Who We Are</a></li>
+					</ul>
+					<form class="navbar-form navbar-right">
+						<a id="login" href="#"><span class="glyphicon glyphicon-user"></span> Jack  </a>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-link">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- Carousel  -->
+		<div id="carouselContainer" class="container-fluid">
+			<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+				<ol class="carousel-indicators" role="listbox"> 
+					<li data-target="#myCarousel" data-slide-to="0" class=""> </li>
+					<li data-target="#myCarousel" data-slide-to="1" class=""> </li>
+					<li data-target="#myCarousel" data-slide-to="2" class="active"> </li>
+				</ol>
+				
+				<div class="carousel-inner">
+					<div class="item">
+						<img src="./files/happy.jpeg" alt="happy">
+						<div id="firstImg" class="carousel-caption">
+							<h2>We can help you reach your savings goals faster</h2>
+							<p>We have a range of options to match your style of saving and help make it easier for you to reach your goals.</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./files/meeting.jpeg" alt="meeting">
+						<div id="secondImg" class="carousel-caption">
+							<h2>Grand ideas start here</h2>
+							<p>Let us help you start yours today </p>
+						</div>
+					</div>
+					<div class="item active">
+						<img src="./files/sitdown.jpeg" alt="sit down">
+							<div id="thridImg" class="carousel-caption">
+								<h2>Contoso Online</h2>
+								<p>Everyday banking online, anywhere, anytime </p>
+							</div>
+					</div>
+
+				</div>
+				  <!-- Left and right controls -->
+			 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+		
+		<!-- Price Info  -->
+
+		<div id="pricing" class="container-fluid" style="margin-top: 30px;">
+		  <div class="text-center">
+			<h2>Home Loans</h2>
+			<h4>Choose a payment plan that works for you</h4>
+		  </div>
+		  <div class="row slideanim">
+			<div class="col-sm-4 col-xs-12">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h1>Basic</h1>
+				</div>
+				<div class="panel-body">
+				  <p><strong>Fixed 12 month special rate</strong></p>
+				  <p>Min 20% equity required</p>
+				  <p>T&amp;C's apply</p>
+				</div>
+				<div class="panel-footer">
+				  <h3>4.39%</h3>
+				  <h4>per annum</h4>
+				  <button class="btn btn-lg">Learn more</button>
+				</div>
+			  </div>      
+			</div>     
+			<div class="col-sm-4 col-xs-12">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h1>Pro</h1>
+				</div>
+				<div class="panel-body">
+				  <p><strong>Fixed 24 month special rate</strong></p>
+				  <p>Min 20% equity required</p>
+				  <p>T&amp;C's apply</p>
+
+				</div>
+				<div class="panel-footer">
+				  <h3>4.49%</h3>
+				  <h4>per annum</h4>
+				  <button class="btn btn-lg">Learn more</button>
+				</div>
+			  </div>      
+			</div>       
+			<div class="col-sm-4 col-xs-12">
+			  <div class="panel panel-default text-center">
+				<div class="panel-heading">
+				  <h1>Premium</h1>
+				</div>
+				<div class="panel-body">
+				  <p><strong>House variable rate</strong></p>
+				  <p>Min 20% equity required</p>
+				  <p>T&amp;C's apply</p>
+				</div>
+				<div class="panel-footer">
+				  <h3>4.59%</h3>
+				  <h4>per annum</h4>
+				  <button class="btn btn-lg">Learn more</button>
+				</div>
+			  </div>      
+			</div>    
+		  </div>
+		</div>
+		
+		<!-- Bottom info  -->
+
+		<div class="container-fluid text-left">
+			<div class="col-sm-4"> 
+				<h3 id="header-special">Accounts </h3>
+					<ul class="list-unstyled">
+						<li><a href="#"> Join Contoso </a></li>
+						<li><a href="#"> Savings Account </a></li>
+						<li><a href="#"> Term Deposits </a></li>
+						<li><a href="faq.html"> Help and Support </a></li>
+					</ul>
+			</div>
+			
+			<div class="col-sm-4">
+				<h3 id="header-special">Calculator, fees and tools</h3>
+					<ul class="list-unstyled">
+						<li><a href="#"><span class="glyphicon glyphicon-search"></span> Our fees &amp; charges </a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-home"></span> Savings &amp; budget calculators </a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-bitcoin"></span> FX rates &amp; currency converter </a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-modal-window"></span> KiwiSaver calculator </a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-piggy-bank"></span> Bank account chooser </a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> Apply for a credit card </a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-hourglass"></span> Life insurance quick estimate </a></li>
+					</ul>
+			</div>
+			
+			<div class="col-sm-4">
+				<h3 id="header-special"> News </h3>
+				<div class="media">
+				  <div class="media-left">
+					<a href="#"><img src="./files/bank.jpg" class="media-object" style="width:60px"></a>
+				  </div>
+				  <div class="media-body">
+					<h4 class="media-heading">Great quarterly results</h4>
+					<p>Up 11% ytd. </p>
+				  </div>
+				</div>
+				<div class="media">
+				  <div class="media-left">
+					<a href="#"><img src="./files/piggy.jpg" class="media-object" style="width:60px"></a>
+				  </div>
+				  <div class="media-body">
+					<h4 class="media-heading">New Savings Rate</h4>
+					<p>Now 0.12%. </p>
+				  </div>
+				</div>
+				<div class="btn btn-default">See all</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid" style="padding: 50px 10px 50px 10px; background-color:#e8e8e8">
+			<ul class="list-inline">
+				<li> <a href="#">Security &amp; Privacy Statement</a></li>
+				<li> <a href="#">Website Terms of Use</a></li>
+				<li> <a href="#">Disclosure Statement</a></li>
+				<li> <a href="#">Terms &amp; Conditions</a></li>
+				<li> <a href="#">Contact Us</a></li>
+				<li> <a href="#">Careers</a></li>
+			</ul>
+		</div>
+		<div class="fix">
+		<img src="./files/chatBar.png" class="fix" id="chat-button" onclick="openChat()">
+			<div id="chat-frame" class="hide">
+				<iframe src="./files/contoso_bank_group.html"></iframe>				
+				<img src="./files/minus.png" onclick="closeChat()">
+			</div>
+		</div>
+</body></html>
